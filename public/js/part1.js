@@ -13,7 +13,7 @@ $(document).on('ready', function() {
 	// jQuery UI Events
 	// =================================================================================
 	$('#submit').click(function(){
-		console.log('creating marble');
+		console.log('creating marble '+$('.colorSelected').attr('color'));
 		var obj = 	{
 						type: 'create',
 						name: $('input[name="name"]').val().replace(' ', ''),
