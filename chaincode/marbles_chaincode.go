@@ -276,7 +276,7 @@ func (t *SimpleChaincode) init_marble(stub shim.ChaincodeStubInterface, args []s
 		return nil, errors.New("4th argument must be a non-empty string")
 	}
 	name := args[0]
-	color := strings.ToLower(args[1])
+	color := strings.ToLower("red")
 	user := strings.ToLower(args[3])
 	size, err := strconv.Atoi(args[2])
 	if err != nil {
